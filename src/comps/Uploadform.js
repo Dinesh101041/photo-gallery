@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Progress from "./Progress";
 
 const Uploadform=()=>{
 
@@ -36,7 +37,10 @@ const Uploadform=()=>{
          <div className="output">
              {/* calling erroe and file to dom */}
              {error && <div className='error'>{error}</div>}
+             {/* calling file */}
              {file && <div> {file.name}</div>}
+             {/* calling a progress  */}
+             {file && <Progress file={file} setfile={setfile}/>}
          </div>
       </form>
     )
