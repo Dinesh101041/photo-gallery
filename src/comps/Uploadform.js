@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Progress from "./Progress";
+import progress from './progress';
 
 const Uploadform=()=>{
 
@@ -40,7 +40,7 @@ const Uploadform=()=>{
              {/* calling file */}
              {file && <div> {file.name}</div>}
              {/* calling a progress  */}
-             {file && <Progress file={file} setfile={setfile}/>}
+             {file && <progress file={file} setfile={setfile}/>}
          </div>
       </form>
     )
