@@ -1,6 +1,6 @@
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/app';
 import 'firebase/storage';
-import  'firebase/firestore';
+import 'firebase/firestore';
 
 
 // Your web app's Firebase configuration
@@ -13,10 +13,9 @@ import  'firebase/firestore';
     messagingSenderId: "791657469051",
     appId: "1:791657469051:web:384de37b2217c0c96e7ede"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
+  // Initialize Firebase  
+  firebase.initializeApp(firebaseConfig)
   const projetstorage = firebase.storage();
   const projectfirestore = firebase.firestore();
 
-  export {projetstorage,projectfirestore};
+export {projetstorage,projectfirestore};
